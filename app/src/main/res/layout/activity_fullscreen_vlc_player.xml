@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/black"
+    tools:context="com.wass08.vlcsimpleplayer.FullscreenVlcPlayer">
+
+    <LinearLayout
+        android:id="@+id/vlc_container"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible"
+            android:background="@android:color/black"
+            >
+
+            <SurfaceView
+                android:id="@+id/vlc_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#69000000"
+                android:id="@+id/vlc_overlay"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/vlc_button_play_pause"
+                        android:src="@drawable/ic_action_pause_over_video"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1">
+
+                        <SeekBar
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/vlc_seekbar" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="00:00 / 00:00"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/vlc_duration" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+                    android:id="@+id/vlc_overlay_title"
+                    android:textColor="@android:color/white"
+                    android:textStyle="italic"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal" />
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

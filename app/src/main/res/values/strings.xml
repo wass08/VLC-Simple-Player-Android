@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VLC Simple Player</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_start">Stream this movie</string>
+    <string name="instruction">Here enter the URL of a movie file :</string>
+    <string name="default_url">http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4</string>
+    <string name="title_activity_fullscreen_vlc_player">FullscreenVlcPlayer</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

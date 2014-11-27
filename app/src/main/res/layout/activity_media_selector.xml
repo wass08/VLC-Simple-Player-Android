@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MediaSelector"
+    android:background="#ffe8e8e8">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/instruction"
+            android:id="@+id/textView"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/url_getter"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/default_url"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/button_start"
+            android:id="@+id/button_start"
+            android:gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:padding="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
